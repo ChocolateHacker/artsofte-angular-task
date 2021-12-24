@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-company-list',
-  template: '<h3>Список компаний</h3>'
+  templateUrl: "./company-list.component.html",
+  styleUrls: [ "./company-list.component.css" ]
 })
 export class CompanyListComponent implements OnInit {
 
