@@ -1,1 +1,11 @@
 <p>company-detail works!</p>
+<div *ngIf="company">
+  <img [src]="company.logo">
+  <br>
+  Name:{{company.business_name}}
+  <br>
+  Industry:{{company.industry}}
+  <br>
+  Type:{{company.type}}
+  <br>
+</div>

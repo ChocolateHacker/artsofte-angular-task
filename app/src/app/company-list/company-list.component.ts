@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {ICompanies} from "./data";
+import {NewServiceService} from "../new-service.service";
 
 @Component({
   selector: 'app-company-list',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompanyListComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  companies!:ICompanies[];
+  constructor(public service: NewServiceService) {
   }
 
+  ngOnInit(): void {
+    this.companies = this.service.CompanyList;
+  }
 }
