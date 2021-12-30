@@ -1,11 +1,9 @@
 <p>company-detail works!</p>
 <div *ngIf="company">
-  <img [src]="company.logo">
-  <br>
-  Name:{{company.business_name}}
-  <br>
-  Industry:{{company.industry}}
-  <br>
-  Type:{{company.type}}
-  <br>
+  <img class="img" [src]="company.logo" alt="logo {{company.business_name}}"><br>
+  <h1>Name: {{company.business_name}}</h1>
+  <h3>Industry: {{company.industry}}</h3>
+  <h3>Number: {{company.phone_number}}</h3>
+  <h3>Address: {{company.full_address}}</h3>
+  <h3>catch phrase: {{company.catch_phrase}}</h3><br>
 </div>

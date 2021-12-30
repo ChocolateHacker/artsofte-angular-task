@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {ICompanies} from "./data";
 import {NewServiceService} from "../new-service.service";
 
@@ -14,6 +14,10 @@ export class CompanyListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getInfo()
+  }
+
+  getInfo(){
     this.companies = this.service.CompanyList;
   }
 }

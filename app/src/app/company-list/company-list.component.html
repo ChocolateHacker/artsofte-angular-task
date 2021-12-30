@@ -1,4 +1,5 @@
-<p>company-list works!</p>
 <div *ngFor="let company of companies">
-  <app-company-item [company]="company"></app-company-item>
+  <a routerLink="/detail/{{company.id}}">
+    <app-company-item [company]="company"></app-company-item>
+  </a>
 </div>
