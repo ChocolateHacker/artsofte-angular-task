@@ -11,6 +11,7 @@ import { CompanyItemComponent } from './company-item/company-item.component';
 import { ErrorComponent } from './error/error.component';
 import { MainComponent } from './main/main.component';
 import {NewServiceService} from "./new-service.service";
+import { CompanySortComponent } from './company-sort/company-sort.component';
 
 
 const appRoutes: Routes = [
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     CompanyYandexMapComponent,
     ErrorComponent,
     MainComponent,
-    CompanyItemComponent
+    CompanyItemComponent,
+    CompanySortComponent
   ],
   imports: [
     BrowserModule,
