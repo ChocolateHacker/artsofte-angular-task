@@ -1,3 +1,17 @@
-.img{
-  width: 30%;
+.image{
+  max-height: 130px;
 }
+
+.items{
+  margin: auto;
+  align-content: center;
+  width: 560px;
+  height: 220px;
+  border:6px solid #000000;
+  border-radius: 10px;
+  color: #c71585;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+

@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  background-image: url(background.jpg);
+}
+
+.main-app{
+  text-align: center;
+}
+
+.link{
+  padding: 5px;
+  background: #ebebeb;
+  border:3px solid #000000;
+  border-radius: 5px
+}
+

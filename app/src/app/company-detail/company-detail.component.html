@@ -1,8 +1,10 @@
 <div *ngIf="company">
-  <img class="img" [src]="company.logo" alt="logo {{company.business_name}}"><br>
-  <h1>Name: {{company.business_name}}</h1>
-  <h3>Industry: {{company.industry}}</h3>
-  <h3>Number: {{company.phone_number}}</h3>
-  <h3>Address: {{company.full_address}}</h3>
-  <h3>catch phrase: {{company.catch_phrase}}</h3><br>
+  <div class="detail-text">
+    <h1>{{company.business_name}}</h1>
+    <h3>Индустрия: {{company.industry}}</h3>
+    <h3>Номер телефона: {{company.phone_number}}</h3>
+    <h3>Адрес: {{company.full_address}}</h3>
+    <h3>Слоган: {{company.catch_phrase}}</h3><br>
+    <img class="image-detail" [src]="company.logo" alt="logo {{company.business_name}}"><br>
+  </div>
 </div>

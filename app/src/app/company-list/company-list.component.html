@@ -2,5 +2,6 @@
 <div *ngFor="let company of companies">
   <a routerLink="/detail/{{company.id}}">
     <app-company-item [company]="company"></app-company-item>
+    <br>
   </a>
 </div>

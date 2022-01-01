@@ -12,6 +12,7 @@ import { ErrorComponent } from './error/error.component';
 import { MainComponent } from './main/main.component';
 import {NewServiceService} from "./new-service.service";
 import { CompanySortComponent } from './company-sort/company-sort.component';
+import { CompanyFilterComponent } from './company-filter/company-filter.component';
 
 
 const appRoutes: Routes = [
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
     ErrorComponent,
     MainComponent,
     CompanyItemComponent,
-    CompanySortComponent
+    CompanySortComponent,
+    CompanyFilterComponent
   ],
     imports: [
         BrowserModule,
