@@ -1,0 +1,7 @@
+<form [formGroup]="sortForm">
+  <select formControlName="sortField">
+    <option *ngFor="let names of sortBy">{{names.text}}</option>
+  </select>
+</form>
+<br>
+<br>
