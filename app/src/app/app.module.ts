@@ -12,8 +12,6 @@ import { ErrorComponent } from './error/error.component';
 import { MainComponent } from './main/main.component';
 import {NewServiceService} from "./new-service.service";
 import { CompanySortComponent } from './company-sort/company-sort.component';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {sortPipe} from "./company-sort/filter.pype";
 
 
 const appRoutes: Routes = [
@@ -35,16 +33,13 @@ const appRoutes: Routes = [
     ErrorComponent,
     MainComponent,
     CompanyItemComponent,
-    CompanySortComponent,
-    sortPipe
+    CompanySortComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         RouterModule.forRoot(appRoutes),
-        HttpClientModule,
-        ReactiveFormsModule,
-        FormsModule
+        HttpClientModule
     ],
   entryComponents:[CompanyListComponent],
   providers: [NewServiceService],

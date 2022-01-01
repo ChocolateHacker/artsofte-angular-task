@@ -1,7 +1,7 @@
-<form [formGroup]="sortForm">
-  <select formControlName="sortField">
-    <option *ngFor="let names of sortBy">{{names.text}}</option>
-  </select>
-</form>
-<br>
+<h4>Сортировка по:</h4>
+<div>
+  <button (click)="sorting('business_name')">По имени</button>
+  <button (click)="sorting('type')">По типу</button>
+  <button (click)="sorting('industry')">По индустрии</button>
+</div>
 <br>
