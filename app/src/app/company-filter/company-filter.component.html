@@ -1,1 +1,18 @@
-<p>company-filter works!</p>
+<div>
+  <input [(ngModel)]="filterName" (input)="searchName()"
+         placeholder="Введите имя компании">
+</div><br>
+<div>
+  <label>Фильтрация по индустрии: </label>
+  <select (change)="searchIndustry()" [(ngModel)]="industry">
+    <option></option>
+    <option *ngFor="let industry of industries" [value]="industry">{{industry}}</option>
+  </select>
+</div><br>
+<div>
+<label>Фильтрация по типу: </label>
+  <select (change)="searchType()" [(ngModel)]="type">
+    <option></option>
+    <option *ngFor="let type of types" [value]="type">{{type}}</option>
+  </select>
+</div>

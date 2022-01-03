@@ -13,6 +13,8 @@ import { MainComponent } from './main/main.component';
 import {NewServiceService} from "./new-service.service";
 import { CompanySortComponent } from './company-sort/company-sort.component';
 import { CompanyFilterComponent } from './company-filter/company-filter.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {AngularYandexMapsModule, YaConfig } from "angular8-yandex-maps";
 
 
 const appRoutes: Routes = [
@@ -24,6 +26,10 @@ const appRoutes: Routes = [
   { path: "**", component: ErrorComponent },
 ]
 
+const mapConfig: YaConfig = {
+  apikey: 'API_KEY',
+  lang: 'en_US',
+};
 
 @NgModule({
   declarations: [
@@ -41,7 +47,10 @@ const appRoutes: Routes = [
         BrowserModule,
         AppRoutingModule,
         RouterModule.forRoot(appRoutes),
-        HttpClientModule
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+        AngularYandexMapsModule.forRoot(mapConfig)
     ],
   entryComponents:[CompanyListComponent],
   providers: [NewServiceService],
