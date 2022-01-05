@@ -93,7 +93,7 @@ export class NewServiceService {
     if(industry == null || industry == ""){
       this.CompanyList = this.startComp
     } else {
-      this.CompanyList = this.startComp.filter(x => {
+      this.CompanyList = this.CompanyList.filter(x => {
         return x.industry.toLocaleLowerCase().includes(industry.toLocaleLowerCase())
       })
     }
@@ -103,7 +103,7 @@ export class NewServiceService {
     if (type == null || type == "") {
       this.CompanyList = this.startComp
     } else {
-      this.CompanyList = this.startComp.filter(x => {
+      this.CompanyList = this.CompanyList.filter(x => {
         return x.type.toLocaleLowerCase().includes(type.toLocaleLowerCase())
       })
     }
